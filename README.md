@@ -1,6 +1,11 @@
 # Puppeteer Captcha Solver
 This library enables automatic resolution of common Captchas when using puppeteer.
 
+This library works asynchronously. It stops automatically when the page is closed. It constantly checks if the page is active. Automatically solves supported Captchas without you having to take any action.
+
+If Captchas recognize that you are a bot, please check this library.
+[puppeteer-real-browser](https://github.com/zfcsoftware/puppeteer-real-browser)
+
 ## Usage
 
 ```bash
@@ -31,7 +36,7 @@ puppeteer.launch({ headless: false }).then(async browser => {
         }
     })
 
-
+    // You can continue your operations here.
 
 })
 
