@@ -7,15 +7,15 @@ puppeteer.use(StealthPlugin())
 puppeteer.launch({ headless: false }).then(async browser => {
     const pages = await browser.pages()
     const page = pages[0]
-    await page.goto('https://2captcha.com/demo/recaptcha-v2',{
+
+    await page.goto('https://nopecha.com/demo/cloudflare',{
         waitUntil: 'domcontentloaded'
     })
 
     solver.autoSolve({
         page: page,
         config: {
-            cloudflare: true,
-            recaptchav2: true
+            turnstile: true
         }
     })
 

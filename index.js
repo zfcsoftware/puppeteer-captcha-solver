@@ -8,13 +8,13 @@ const rcp2Solver = require('./lib/rcpSolver.js');
 const autoSolve = ({ page, config }) => {
     return new Promise((resolve, reject) => {
         
-        if (config.cloudflare) {
+        if (config.turnstile) {
             cfSolver.cron(page)
         }
 
-        if (config.recaptchav2) {
-            rcp2Solver.cron(page)
-        }
+        // if (config.recaptchav2) {
+        //     rcp2Solver.cron(page)
+        // }
 
 
     })
