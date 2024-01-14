@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-captcha-solver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This library enables automatic resolution of common Captchas when using puppeteer.",
   "main": "index.js",
   "scripts": {
