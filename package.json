@@ -6,13 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["puppeteer","puppeteer captcha solver","puppeteer captcha","captcha solver"],
+  "keywords": [
+    "puppeteer",
+    "puppeteer captcha solver",
+    "puppeteer captcha",
+    "captcha solver"
+  ],
   "author": "zfcsoftware",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^21.7.0",
-    "puppeteer-extra": "^3.3.6",
-    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "undici": "^6.3.0"
   },
   "repository": {
